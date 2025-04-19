@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/IndexStyles.css">
+    <title>Casino App</title>
+</head>
+<body>
+    <h1>Welcome to the Casino</h1>
+    <h2>Let's start by logging you in</h2>
+    <button id="LoginButton">Login</button>
+    <div id="AccountAuthenticationForm" class="popup">
+        <form id="LoginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+        <p id="RegistrationMessage">Are you new? <a id="RegistrationFormLink" href="#">Register Here</a></p>
+    </div>
+    <div id="RegisterAccountForm" class="popup">
+        <form id="RegistrationForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required><br><br>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required><br><br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+            <label for="Amount">Starting Amount:</label>
+            <input type="number" id="Amount" name="Amount" required><br><br>
+            <input type="submit" value="Create Account">
+        </form>
+    </div>
+    <script src="../JS/Script.js"></script>
+</body>
+</html>

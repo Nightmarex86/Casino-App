@@ -1,0 +1,111 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    padding: 0;
+    background-color: darkgreen;
+}
+
+h1 {
+    color: #b8860b; /* Darker gold for better contrast */
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #d4af37; /* Goldenrod with better contrast */
+    text-align: center;
+    margin-top: 10px;
+}
+#LoginButton{
+    display:block;
+    width: 100px;
+    background-color: #b8860b; /* Gold button */
+    color: #fff;
+    border: none;
+    margin:10px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#LoginButton:hover{
+    background-color: #d4af37; /* Lighter gold on hover */
+}
+#AccountAuthenticationForm,
+#RegisterAccountForm {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 470px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for better visibility */
+    z-index: 1000;
+    animation: fadeIn 0.3s ease; /* Fade-in animation */
+}
+
+#AccountAuthenticationForm.active,
+#RegisterAccountForm.active {
+    display: block;
+}
+
+#AccountAuthenticationForm input,
+#RegisterAccountForm input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#AccountAuthenticationForm input[type="submit"],
+#RegisterAccountForm input[type="submit"] {
+    background-color: #b8860b; /* Gold button */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#AccountAuthenticationForm input[type="submit"]:hover,
+#RegisterAccountForm input[type="submit"]:hover {
+    background-color: #d4af37; /* Lighter gold on hover */
+}
+
+#AccountAuthenticationForm p,
+#RegisterAccountForm p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#AccountAuthenticationForm p a,
+#RegisterAccountForm p a {
+    color: #b8860b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#AccountAuthenticationForm p a:hover,
+#RegisterAccountForm p a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in animation for the popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
